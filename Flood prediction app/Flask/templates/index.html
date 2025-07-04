@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>🌧️ Flood Prediction System</h1>
+            <p>Don't let floods catch you off guard. Get accurate predictions before it's too late.</p>
+            <a href="/home"><button class="cta-button">Predict Now</button></a>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='img/flood-illustration.jpg') }}" alt="Flood Alert Illustration">
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Our System?</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>⚡ Fast Predictions</h3>
+                <p>Our AI model delivers real-time flood risk predictions based on live data.</p>
+            </div>
+            <div class="card">
+                <h3>🌍 Easy to Use</h3>
+                <p>Simple, intuitive interface anyone can use—no tech skills required.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Accurate Data</h3>
+                <p>Backed by robust environmental datasets for better reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Flood Prediction System </p>
+    </footer>
+</body>
+</html>

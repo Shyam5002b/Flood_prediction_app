@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>⚠️ Flood Expected</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<style>
+  body.chance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("{{ url_for('static', filename='img/chance.png') }}");
+    background-size: cover;               
+    background-repeat: no-repeat;         
+    background-position: center center;   
+    height: 100vh;
+    margin: 0;
+    background-color: #edf3f7;
+  }
+
+  .glass-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+
+  .button-group {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .button-group button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-group button:hover {
+    background-color: #2744a3;
+  }
+</style>
+
+<body class = "chance">
+  <div class="glass-card">
+    <h2 class = "result-status">⚠️ Flood Risk Detected</h2>
+    <p class="result-message">Take precautions immediately!</p>
+    <div class="button-group">
+      <a href="/home"><button>🔁 Try Again</button></a>
+      <a href="/"><button>🏠 Home</button></a>
+    </div>
+  </div>
+</body>
+</html>
